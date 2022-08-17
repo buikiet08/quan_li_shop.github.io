@@ -1,11 +1,10 @@
 import React from 'react'
-import { BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom'
-import Home from './Home'
-import ProductPage from './ProductPage'
-import { image,icons } from '../../contains'
-function Main() {
+import { Link } from 'react-router-dom'
+import { icons,image } from '../../../../contains'
+
+function Header() {
   return (
-    <div className='w-screen'>
+    <div>
         <div className='w-full bg-black-2 h-[80px]'>
           <div className='w-[1216px] mx-auto flex justify-between items-center h-[100%]'>
             <div className='h-[100%] overflow-hidden'>
@@ -43,21 +42,30 @@ function Main() {
                 <img src={icons.home} alt='home' />
                 <span>Thống kê</span>
               </Link>
-              <Link to="/prodcuts">
+              <Link to="/hanghoa">
                 <img src={icons.box} alt='box' />
                 <span>Hàng hóa</span>
               </Link>
-              
+              <Link to="/giaodich">
+                <img src={icons.switchArrow} alt='box' />
+                <span>Giao dịch</span>
+              </Link>
+              <Link to="/congno">
+                <img src={icons.users} alt='box' />
+                <span>Công nợ</span>
+              </Link>
+              <Link to="/baocao">
+                <img src={icons.bar} alt='box' />
+                <span>Báo cáo</span>
+              </Link>
+              <Link to="/thongke">
+                <img src={icons.dollar} alt='box' />
+                <span>Thống kê</span>
+              </Link>
           </div>
-        </div>
-        <div className='w-[1216px] mx-auto'>
-              
-                  {/* <Route path="/" element={<Home />} />
-                  <Route path="/products" element={<ProductPage />} /> */}
-               
         </div>
     </div>
   )
 }
 
-export default Main
+export default Header
