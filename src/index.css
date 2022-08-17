@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .menu-item {
+        @apply flex items-center py-[14px] px-[2px] mr-6 border-b border-b-white transition-all
+    }
+    .active {
+        @apply flex items-center py-[14px] px-[2px] mr-6 border-b border-b-black-2 
+    }
+    .active .menu-link {
+        @apply text-black-2 font-medium
+    }
+    .menu-link {
+        @apply leading-5 text-gray-2 ml-[6px] transition-colors
+    }
+}
