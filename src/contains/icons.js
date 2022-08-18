@@ -8,6 +8,12 @@ export const switchArrow = `${process.env.PUBLIC_URL}/assets/icon/switch-horizon
 export const users = `${process.env.PUBLIC_URL}/assets/icon/users.png`;
 export const bar = `${process.env.PUBLIC_URL}/assets/icon/chart-bar.png`;
 export const dollar = `${process.env.PUBLIC_URL}/assets/icon/currency-dollar.png`;
+export const up = `${process.env.PUBLIC_URL}/assets/icon/up.png`;
+export const down = `${process.env.PUBLIC_URL}/assets/icon/down.png`;
+export const dollar2 = `${process.env.PUBLIC_URL}/assets/icon/dollar-2.png`;
+export const box2 = `${process.env.PUBLIC_URL}/assets/icon/box-2.png`;
+export const box3 = `${process.env.PUBLIC_URL}/assets/icon/box-3.png`;
+
 
 
 
@@ -21,6 +27,11 @@ export default {
     switchArrow,
     users,
     bar,
-    dollar
+    dollar,
+    up,
+    down,
+    dollar2,
+    box2,
+    box3
 }
 
