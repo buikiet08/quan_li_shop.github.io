@@ -14,7 +14,10 @@ module.exports = {
       'gray': '#D5D6D7',
       'gray-1': '#828282',
       'gray-2': '#626262',
-      'yellow': '#EAC363'
+      'gray-3': '#AFB4B8',
+      'yellow': '#EAC363',
+      'blue': '#E3EBFB',
+      'green': '#D2F1E3'
     },
     width: {
       '500': '500px',
