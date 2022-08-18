@@ -24,6 +24,7 @@ function FormValidate({
   const { register, handleSubmit, formState: { errors } } = useForm();
   const [verified,setVerified] = useState(false);
   const recaptchaRef = React.createRef();
+
   const onSubmit = (data) => {
     const recaptchaValue = recaptchaRef.current.getValue();
     console.log(recaptchaValue);
@@ -219,15 +220,17 @@ function FormValidate({
       {/* captcha */}
       {
         captcha &&
-        <div className='flex justify-center mt-[14px] mb-6'>
-            <ReCAPTCHA
-                ref={recaptchaRef}
-                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                onChange={onChange}
-            />
-        </div>
+        (
+            <div className='flex justify-center mt-[14px] mb-6'>
+                <ReCAPTCHA
+                    ref={recaptchaRef}
+                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    onChange={onChange}
+                />
+            </div>
+        )
       }
-      
+
       {/* button submit */}
 
       <Button label={label} type="submit" disabled={verified} />

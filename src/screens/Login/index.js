@@ -45,7 +45,7 @@ function Login() {
     
   return (
     <div className={`h-screen w-screen flex justify-center items-center bg-primary`}>
-        <div className={`w-500 rounded-lg bg-white p-6 flex flex-col ${fogot || otp ? 'justify-start items-left' : 'justify-center items-center'}`}>
+        <div className={`w-500 rounded-lg bg-white p-6 flex flex-col ${fogot || otp || newPass ? 'justify-start items-left' : 'justify-center items-center'}`}>
             <h3 className={`font-medium leading-5`}>{title}</h3>
             {
                 otp ? 
